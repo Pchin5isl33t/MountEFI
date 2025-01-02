@@ -207,7 +207,7 @@ class MountEFI:
             if self.settings.get("resize_window",True): self.u.resize(max(80,width), height)
             self.u.head()
             print(disk_string)
-            menu = self.u.grab("Pick the drive containing your EFI:  ")
+            menu = self.u.grab("Pick the drive containing the EFI to mount:  ")
             if not len(menu):
                 if not di:
                     continue
